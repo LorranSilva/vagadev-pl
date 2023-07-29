@@ -1,0 +1,31 @@
+/* Estilos para o componente App */
+.app-container {
+    position: relative; /* Permite posicionar elementos filhos de forma relativa */
+  
+    .navbar {
+      background-color: transparent; /* Torna o navbar transparente */
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 2; /* Coloca o navbar acima do BannerSlider */
+    }
+  }
+  
+  /* Estilos para o BannerSlider */
+  .banner-slider {
+    position: relative;
+    z-index: 1; /* Coloca o BannerSlider abaixo do navbar */
+  }
+  
+  .card-container {
+    display: flex; /* Alinha os cards na horizontal */
+    gap: 20px; /* Distribui os cards com espaço igual entre eles */
+    justify-content: center;
+  }
+
+  .destaques-container {
+    display: flex; /* Alinha os cards na horizontal */
+    gap: 20px; /* Distribui os cards com espaço igual entre eles */
+    justify-content: center;
+  }

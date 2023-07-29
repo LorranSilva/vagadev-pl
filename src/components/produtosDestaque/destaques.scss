@@ -1,0 +1,23 @@
+.destaque-img{
+    width: 350px;
+    height: 362px;
+    flex-shrink: 0;
+}
+
+.details{
+    border-radius: 0px 0px 10px 10px;
+    background: #F5F5F5;
+}
+button{
+    background-color: #3EC6E0;
+    font-size: medium;
+    .button-text{
+        color: #FFF;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: normal;
+    }
+}
