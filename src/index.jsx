@@ -72,7 +72,7 @@ const App = () => {
             
             <Destaque addToCart={() => handleAddToCart({ title: "Donkey Kong Country", price: "223,00"  })} 
             title="Donkey Kong country"
-            price="223,90"
+            price="223,00"
             imageSrc="https://s3-alpha-sig.figma.com/img/b23d/a535/15201c4e368fbbe5414f08fae49d6e6c?Expires=1691366400&Signature=A2H8~KwHXzhddBjYaC3w0Mp3uY5WOEDoMwhUgE6ymQNWbR3nHfg8eWk2coJyS~fmB6s8wNa0VggLzgBlrCtVPicZixzpFhYXkrMgDOsRgF52-4JZ2MTtUr9uG8r3PjCoXgH2ihgHUda3ytidQKpCBXSNrKn5uEP9ykObNDO14l-HY5KvRfYou4EdYr-T8c6ES82tDjF2hv3X-I8bWyB120M5EsWcHjB8DyZ6waYIrq9ANS-InfcRuGW3odklPiqE3FHqODvuC8iRH9i5xd8~o378rj2DqfzHsfT4i1lq~u~Bsjg26WfOR~6Tkykh2KgWRbrjbFa~-6WPBOQNy9zLHA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" />
         </div>
         <div>

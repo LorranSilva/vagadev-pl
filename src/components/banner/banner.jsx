@@ -4,6 +4,8 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import './banner.scss';
+import jogoUm from '../../assets/img/principal_banner_desktop 1.png';
+import jogoDois from '../../assets/img/principal_banner_desktop_02.png';
 
 const BannerSlider = () => {
   const sliderRef = useRef(null);
@@ -35,22 +37,16 @@ const BannerSlider = () => {
 
   const games = [
     {
-      name: 'Dragon Quest Champions',
+      name: 'Mortal Kombat',
       description: 'Dragon Quest Champions é um videogame RPG de ação baseado em turnos desenvolvido pela Omega Force, uma divisão da Koei Tecmo, com publicação da Square Enix.',
       price: '$49.99',
-      imageUrl: 'https://sm.ign.com/ign_pt/screenshot/default/dragon-quest-champions-imagem-destaque_aqzr.jpg',
+      imageUrl: jogoUm,
     },
     {
-      name: 'Kingdom Hearts 3',
+      name: 'Red dead redemption 2',
       description: 'Kingdom Hearts III é um jogo eletrônico do gênero RPG de ação desenvolvido e publicado pela Square Enix e distribuído pela Disney Interactive Studios para o PlayStation 4 e Xbox One.',
       price: '$59.99',
-      imageUrl: 'https://www.kingdomhearts.com/img/trailers/desktop/15_desktop.jpg',
-    },
-    {
-      name: 'Persona 5 Royal',
-      description: 'Persona 5 Royal é uma versão estendida do jogo original Persona 5 com conteúdo novo, incluindo personagens, áreas do jogo e funcionalidades.',
-      price: '$59.99',
-      imageUrl: 'https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/ncom/pt_BR/games/switch/p/persona-5-royal-switch/hero',
+      imageUrl: jogoDois,
     },
   ];
 

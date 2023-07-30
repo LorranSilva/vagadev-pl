@@ -32,7 +32,7 @@ const Recomendacoes = ({ filter }) => {
   return (
     <>
       <div>
-        {gameData.map((data) => (
+        {gameData.slice(3, 7).map((data) => (
           <img key={data.id} alt={data.title} src={data.thumbnail} />
         ))}
       </div>
