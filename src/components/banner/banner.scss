@@ -12,6 +12,7 @@
   }
 
   .game-info {
+    height: 350px;
     position: absolute;
     background-color: #3EC6E0;
     top: 50%;
@@ -20,14 +21,122 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
+    border-bottom-left-radius: 10px;
+    
   }
   
   .game-name {
+    height: 200px;
     writing-mode: vertical-rl; /* This will make the text vertical */
     font-size: 18px;
     font-weight: bold;
     color: white;
-    margin-bottom: 10px;
+    margin: 30px 0;
+    text-align: center;
+    display: flex;
+
+    span {
+      background-color: #fff;
+      border-bottom: 1px solid #fff;
+      width: 1px;
+      height: 50px;
+      margin: auto;
+    }
+  }
+  
+  .sub-banner{
+    position: relative;
+    height: 840px;
+
+    display: flex ;
+    align-items: center;
+    justify-content: space-around;
+
+    @media (max-width: 1300px){
+      height: 640px;
+    }
+  
+    @media (max-width: 1025px){
+      height: 520px;
+    }
+  
+    @media (max-width: 992px){
+      align-items: flex-end;
+      width: 100%;
+    }
+  
+    @media (max-width: 670px){
+      height: 540px;
+    }
+  
+    @media (max-width: 576px){
+      height: 440px;
+    }
+  }
+
+  .img-banner{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+  }
+
+  .game-details{
+    justify-content: center;
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 99;
+    padding: 0 72px 0 0;
+    
+
+    @media (max-width: 992px){
+      background-color: #00000040;
+      padding: 0 4% 15px 50%;
+    }
+
+    p{
+      color: white;
+    }
+
+    .price{
+      color: #3EC6E0;
+      font-size: 70px;
+      font-weight: 900;
+      line-height: 82px;
+      letter-spacing: 0em;
+      text-align: left;
+
+    }
+
+    .name{
+      color: white;
+      font-size: 46px;
+      font-weight: 900;
+      line-height: 54px;
+      letter-spacing: 0em;
+      text-align: left;
+      text-transform: uppercase;
+    }
+
+    .description{
+      padding: 0 15px 0 65%;
+      font-family: Roboto;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 25px;
+      letter-spacing: 0em;
+      text-align: right;
+      
+    }
   }
 
   .name-container{
@@ -35,7 +144,12 @@
   }
 
   .arrow-container{
-    background-color: darkblue;
+    background: #084154;
+    border-bottom-left-radius: 10px;
+    p {
+      color: #ffffff;
+      text-align: center;
+    }
   }
   
   .arrow-button {

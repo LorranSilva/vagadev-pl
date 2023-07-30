@@ -16,7 +16,7 @@ const MiniCart = ({ cartItems: initialCartItems }) => {
   useEffect(() => {
     localStorage.setItem('cartItems', JSON.stringify(cartItems));
   }, [cartItems]);
-  
+
   const [cep, setCep] = useState('');
   const [frete, setFrete] = useState(null);
 
@@ -46,8 +46,9 @@ const MiniCart = ({ cartItems: initialCartItems }) => {
 
   return (
     <div className="mini-cart">
-      <div className="cart-items">
+      <div className="cart-items sub-menu">
         <h3>Meu Carrinho</h3>
+        <div>
         {Object.keys(cartItems).length >= 1 ? (
           <>
             <ul>
@@ -84,6 +85,7 @@ const MiniCart = ({ cartItems: initialCartItems }) => {
         ) : (
           <p>O carrinho está vazio.</p>
         )}
+      </div>
       </div>
     </div>
   );

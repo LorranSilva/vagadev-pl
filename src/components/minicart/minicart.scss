@@ -2,5 +2,17 @@
 @import '~@fortawesome/fontawesome-free/css/all.min.css';
 
 .mini-cart {
-  position: relative;
+  position: absolute;
+  background-color: #fff;
+  }
+
+  .sub-menu{
+    background-color: #fff;
+    width: 100%;
+    position: relative;
+    min-width: 230px;
+    p, h3, ul, li{
+      color: black;
+      font-size: 14px;
+    }
   }

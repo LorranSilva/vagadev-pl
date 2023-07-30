@@ -1,4 +1,11 @@
-/* Estilos para o componente App */
+*{
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+}
+
 .app-container {
     position: relative; /* Permite posicionar elementos filhos de forma relativa */
   
@@ -28,4 +35,8 @@
     display: flex; /* Alinha os cards na horizontal */
     gap: 20px; /* Distribui os cards com espaço igual entre eles */
     justify-content: center;
+  }
+
+  body{
+    margin: 0;
   }
