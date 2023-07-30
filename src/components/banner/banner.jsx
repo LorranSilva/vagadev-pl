@@ -13,7 +13,7 @@ const BannerSlider = () => {
   const sliderRef = useRef(null);
   const [currentSlide, setCurrentSlide] = useState(0);
 
-  //const isMobile = useMediaQuery({ query: '(max-width: 768px)' })
+  // const isMobile = useMediaQuery({ query: '(max-width: 768px)' })
 
   const settings = {
     arrows: false,
@@ -48,7 +48,7 @@ const BannerSlider = () => {
     },
     {
       name: 'Red dead redemption 2',
-      description: 'Red dead 2 combina uma apresentação cinemática única com uma jogabilidade totalmente nova. Os jogadores podem escolher pela primeira vez diversas variantes de cada personagem, afetando tanto a estratégia como o estilo de luta.',
+      description: 'Red Dead Redemption 2 é um jogo eletrônico de ação-aventura desenvolvido e publicado pela Rockstar Games. É o terceiro título da série Red Dead e uma prequela de Red Dead Redemption, tendo sido lançado em outubro de 2018.',
       price: 'R$399.99',
       imageUrl: jogoDois,
     },

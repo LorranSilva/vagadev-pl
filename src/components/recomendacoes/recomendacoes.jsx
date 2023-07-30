@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import './recomendacoes.scss'
 
 const Recomendacoes = ({ filter }) => { 
   const [gameData, setGameData] = useState([]);
@@ -30,13 +31,13 @@ const Recomendacoes = ({ filter }) => {
   }, [filter]);
 
   return (
-    <>
-      <div>
+    <div className="container-recomendation">
+      <div  className="subcontainer-recomendation">
         {gameData.slice(3, 7).map((data) => (
           <img key={data.id} alt={data.title} src={data.thumbnail} />
         ))}
       </div>
-    </>
+    </div>
   );
 };
 

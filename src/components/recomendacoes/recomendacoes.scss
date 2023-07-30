@@ -1,0 +1,21 @@
+.div-recomendation {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+.recomendation-head, .container-recomendation {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.subcontainer-recomendation {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    
+    img{
+        width: 270px;
+    }
+}

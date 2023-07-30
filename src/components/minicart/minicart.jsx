@@ -46,8 +46,7 @@ const MiniCart = ({ cartItems: initialCartItems }) => {
 
   return (
     <div className="mini-cart">
-      <div className="cart-items sub-menu">
-        <h3>Meu Carrinho</h3>
+      <div className="cart-items sub-menu-div">
         <div>
         {Object.keys(cartItems).length >= 1 ? (
           <>

@@ -1,15 +1,25 @@
 import React from 'react';
 import './destaques.scss';
 
-const Destaque = ({ title, price, imageSrc, addToCart }) => {
+const Destaque = ({ title, price, buttonId, imageSrc, addToCart }) => {
   return (
     <>
-        <div>
-            <img alt={title} src={imageSrc} className="destaque-img" />
-            <h3>{title}</h3>
-            <p>{price}</p>
-            <button><p className="button-text" onClick={addToCart}>Comprar</p></button>
+      <div className="div-destaque">
+        <div className="img-destaque">
+          <img alt={title} src={imageSrc} className="destaque-img" />
         </div>
+        <div className="container-destaques">
+          <div className="details-destaques">
+            <p className="title">{title}</p>
+            <p className="price">{price}</p>
+          </div>
+          <div>
+            <button id={buttonId}>
+              <p className="button-text" onClick={addToCart}>COMPRAR</p>
+            </button>
+          </div>
+        </div>
+      </div >
     </>
   );
 };

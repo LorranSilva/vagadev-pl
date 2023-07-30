@@ -1,26 +1,42 @@
 /* Estilos para o componente Card */
 .card {
     border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 16px;
     margin-bottom: 20px;
     max-width: 300px;
+  }
+
+  .card-subcontainer {
+    width: 100%;
   }
   
   .card-image {
     width: 100%;
     height: auto;
-    border-radius: 8px;
-    margin-bottom: 8px;
-  }
-  
-  .card-title {
-    font-size: 18px;
-    margin-bottom: 8px;
+    margin-bottom: -4px;
   }
   
   .card-text {
-    font-size: 14px;
-    color: #666;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #084154;
   }
   
+  .card-details-box{
+    background-color: #3EC6E0;
+    border-radius: 0px 0px 5px 5px;
+    padding: 15px 30px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .card-line{
+    background-color: #3EC6E0;
+    border-bottom: 1px solid #fff;
+    width: 40%;
+    height: 1px;
+    margin: auto;
+  }
+

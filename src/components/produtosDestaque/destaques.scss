@@ -1,23 +1,101 @@
-.destaque-img{
-    width: 350px;
-    height: 362px;
-    flex-shrink: 0;
-}
+  .container-destaques {
+      background-color: #F5F5F5;
+      height: 140px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      padding: 10px 20px;
+      border-bottom-right-radius: 10px;
+      border-bottom-left-radius: 10px;
+      gap: 10px;
 
-.details{
-    border-radius: 0px 0px 10px 10px;
-    background: #F5F5F5;
-}
-button{
-    background-color: #3EC6E0;
-    font-size: medium;
-    .button-text{
-        color: #FFF;
-        text-align: center;
-        font-family: Roboto;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 900;
-        line-height: normal;
-    }
-}
+      .details-destaques {
+          width: 100%;
+          text-align: start;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          padding: 0 20px;
+
+          .title {
+              color: #084154;
+              font-size: 14px;
+              font-weight: 400;
+              line-height: 16px;
+              letter-spacing: 0em;
+              text-align: left;
+          }
+
+          .price {
+              color: #084154;
+              font-size: 15px;
+              font-weight: 900;
+              line-height: 21px;
+              letter-spacing: 0em;
+              text-align: left;
+
+          }
+      }
+  }
+
+  .div-destaque {
+      align-items: center;
+      border: 1px;
+      box-shadow: 5px 10px 20px rgb(207, 200, 200);
+      border-radius: 10px;
+
+      button {
+          width: 240px;
+          height: 52px;
+          border-radius: 5px;
+          position: relative;
+          border: none;
+      }
+  }
+
+  .destaque-img {
+      width: 350px;
+      height: 362px;
+      flex-shrink: 0;
+  }
+
+  .details {
+      border-radius: 0px 0px 10px 10px;
+      background: #F5F5F5;
+  }
+
+  button {
+      background-color: #3EC6E0;
+      border-radius: 5px;
+
+      .button-text {
+          color: #FFF;
+          text-align: center;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 900;
+          line-height: normal;
+          padding-left: 10px;
+      }
+
+      .img-mario {
+          width: 68px;
+          height: 60px;
+          position: absolute;
+          top: -10px;
+          right: 0;
+      }
+  }
+
+  .details-destaque {
+      justify-content: center;
+      flex-direction: column;
+      align-items: left;
+  }
+
+  .img-destaque {
+      width: 350px;
+      height: 363px;
+      border-bottom: 2px solid #3EC6E0;
+  }

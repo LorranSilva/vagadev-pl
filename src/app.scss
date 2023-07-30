@@ -6,37 +6,100 @@
 
 }
 
+body{
+  margin: 0;
+}
+
 .app-container {
-    position: relative; /* Permite posicionar elementos filhos de forma relativa */
+    position: relative;
   
     .navbar {
-      background-color: transparent; /* Torna o navbar transparente */
+      background-color: transparent;
       position: absolute;
       top: 0;
       left: 0;
       right: 0;
-      z-index: 2; /* Coloca o navbar acima do BannerSlider */
+      z-index: 2;
     }
   }
   
-  /* Estilos para o BannerSlider */
   .banner-slider {
     position: relative;
-    z-index: 1; /* Coloca o BannerSlider abaixo do navbar */
+    z-index: 1;
   }
   
   .card-container {
-    display: flex; /* Alinha os cards na horizontal */
-    gap: 20px; /* Distribui os cards com espaço igual entre eles */
+    display: flex;
+    gap: 10px;
     justify-content: center;
+    flex-direction: row;
+    margin-bottom: 60px;
+    height: 300px;
   }
 
   .destaques-container {
-    display: flex; /* Alinha os cards na horizontal */
-    gap: 20px; /* Distribui os cards com espaço igual entre eles */
+    padding: 30px 0 ;
+    display: flex;
+    gap: 50px;
     justify-content: center;
   }
 
-  body{
-    margin: 0;
+  .middle-container, .bottom-container{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 0 auto;
+    gap: 20px
+  }
+
+  .bottom-container{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 0 auto 30px auto;
+    gap: 20px
+
+  }
+
+  .recomendation-head {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .select-recomendation{
+    width: 250px;
+    height: 50px;
+    border-radius: 5px;
+    border: 2px solid #084154;
+  }
+
+  .card-container-2{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    bottom: 10px;
+    z-index: 80;
+  }
+
+  .container-title-shelf {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+    align-items: center;
+
+    img {
+      width: 28px;
+      height: 28px;
+    }
+  }
+  .title-shelf {
+    width: 380px;
+    color: #084154;
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 42px;
+    letter-spacing: 0em;
+    text-align: left;    
   }

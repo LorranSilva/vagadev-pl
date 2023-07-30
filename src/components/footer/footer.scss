@@ -1,27 +1,28 @@
-#rodape {
+.rodape {
     display: flex;
     align-items: center;
-    padding: 10px;
+
   }
   
   .footer-item {
     height: 50px;
     display: flex;
     align-items: center;
-    padding: 10px;
+    padding: 10px 30px;
   }
   
   .dark-blue {
     flex: 30%;
-    background-color: #1c1c4c;
+    background-color: #084154;
     color: #fff;
+    justify-content: flex-end;
+   
   }
   
   .blue {
     flex: 70%;
     background-color: #3EC6E0;
     color: #fff;
-    font-family: Roboto;
   }
   
   .icon {

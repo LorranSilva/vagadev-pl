@@ -23,16 +23,27 @@ const Navbar = ({ cartItems }) => {
   return (
     <header>
       <nav className='nav'>
-
         <div className="sub-nav">
           <div className="nav-item">
             <img src={logoMenu} alt="menu" onClick={toggleMenu}></img>
             <div className="sub-menu-div">
               {isMenuOpen && (
-                <div className="sub-menu">
-                  <p>Games</p>
-                  <p>Ofertas</p>
-                  <p>Melhores do ano</p>
+                <div className="sub-menu-simple">
+                  <ul>
+                    <li>Games</li>
+                    <li>Novos</li>
+                    <li>Melhores do ano</li>
+                  </ul>
+                  <ul>
+                    <li>Games</li>
+                    <li>Novos</li>
+                    <li>Melhores do ano</li>
+                  </ul>
+                  <ul>
+                    <li>Games</li>
+                    <li>Novos</li>
+                    <li>Melhores do ano</li>
+                  </ul>
                 </div>
               )}
             </div>
