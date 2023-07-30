@@ -70,12 +70,15 @@ const BannerSlider = () => {
       </Slider>
       <div className="game-info">
         <span className="game-name">{games[currentSlide].name}</span>
-        <button className="arrow-button" onClick={handlePrevSlide}>
-          <FaChevronLeft />
-        </button>
-        <button className="arrow-button" onClick={handleNextSlide}>
-          <FaChevronRight />
-        </button>
+        <div className="arrow-container">
+          <p>{currentSlide + 1}/{games.length}</p>
+          <button className="arrow-button" onClick={handlePrevSlide}>
+            <FaChevronLeft />
+          </button>
+          <button className="arrow-button" onClick={handleNextSlide}>
+            <FaChevronRight />
+          </button>
+        </div>
       </div>
     </div>
   );

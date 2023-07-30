@@ -5,8 +5,8 @@ import './minicart.scss';
 const MiniCart = ({ cartItems: initialCartItems }) => {
   const [cartItems, setCartItems] = useState(initialCartItems);
 
+  //extra
   useEffect(() => {
-    // Recuperar o carrinho do localStorage ao montar o componente
     const savedCartItems = JSON.parse(localStorage.getItem('cartItems'));
     if (savedCartItems) {
       setCartItems(savedCartItems);
@@ -14,7 +14,6 @@ const MiniCart = ({ cartItems: initialCartItems }) => {
   }, []);
 
   useEffect(() => {
-    // Salvar o carrinho no localStorage sempre que ele for atualizado
     localStorage.setItem('cartItems', JSON.stringify(cartItems));
   }, [cartItems]);
   
@@ -73,7 +72,10 @@ const MiniCart = ({ cartItems: initialCartItems }) => {
                   />
                   <button onClick={handleCalculateFrete}>Calcular Frete</button>
                   {frete && (
-                    <p>Valor do Frete: Grátis</p>
+                    <>
+                      <p>Valor do Frete: Grátis</p>
+                      <p>Cidade: {frete.localidade}  -  Bairro: {frete.bairro}</p>
+                    </>
                   )}
                 </div>
               )}
