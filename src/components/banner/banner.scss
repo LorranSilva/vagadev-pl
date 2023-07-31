@@ -1,5 +1,4 @@
 .banner-slider {
-  // Estilos para o container do slider
   max-width: 1920px;
   margin: 0 auto;
   
@@ -12,7 +11,6 @@
 }
 
 .game-info {
-  // Estilos para a div com class 'game-info'
   height: 350px;
   position: absolute;
   background-color: #3EC6E0;
@@ -26,7 +24,6 @@
   border-bottom-left-radius: 10px;
   
   @media (max-width: 992px) {
-    // Estilos para dispositivos móveis
     width: 100%;
     position: relative;
     top: 0;
@@ -39,7 +36,6 @@
 }
 
 .game-name {
-  // Estilos para o nome do jogo
   height: 200px;
   writing-mode: vertical-rl;
   font-size: 18px;
@@ -59,7 +55,6 @@
 }
 
 .sub-banner {
-  // Estilos para a div com class 'sub-banner'
   position: relative;
   height: 840px;
   margin-bottom: -126px;
@@ -90,7 +85,6 @@
 }
 
 .img-banner {
-  // Estilos para a imagem do jogo
   position: absolute;
   top: 0;
   height: 100%;
@@ -99,7 +93,6 @@
 }
 
 .game-details {
-  // Estilos para a div com class 'game-details'
   justify-content: center;
   font-family: 'Roboto';
   font-size: 16px;
@@ -157,7 +150,6 @@
 }
 
 .arrow-container {
-  // Estilos para a div com class 'arrow-container'
   background: #084154;
   border-bottom-left-radius: 10px;
   p {
@@ -167,7 +159,6 @@
 }
 
 .arrow-button {
-  // Estilos para as setas
   background-color: transparent;
   border: none;
   font-size: 24px;

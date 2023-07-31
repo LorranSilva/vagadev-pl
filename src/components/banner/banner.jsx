@@ -1,19 +1,20 @@
 import React, { useRef, useState } from 'react';
 import Slider from 'react-slick';
-//import { useMediaQuery } from 'react-responsive'
-
+import { useMediaQuery } from 'react-responsive';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import './banner.scss';
 import jogoUm from '../../assets/img/principal_banner_desktop 1.png';
 import jogoDois from '../../assets/img/principal_banner_desktop_02.png';
+import jogoUmMobile from '../../assets/img/mk-mobile-banner.png';
+import jogoDoisMobile from '../../assets/img/principal_banner_mobile_02.png';
 
 const BannerSlider = () => {
   const sliderRef = useRef(null);
   const [currentSlide, setCurrentSlide] = useState(0);
 
-  // const isMobile = useMediaQuery({ query: '(max-width: 768px)' })
+  const isMobile = useMediaQuery({ query: '(max-width: 768px)' })
 
   const settings = {
     arrows: false,
@@ -54,6 +55,56 @@ const BannerSlider = () => {
     },
   ];
 
+  const gamesMobile = [
+    {
+      name: 'Mortal Kombat',
+      description: 'Mortal Kombat X combina uma apresentação cinemática única com uma jogabilidade totalmente nova. Os jogadores podem escolher pela primeira vez diversas variantes de cada personagem, afetando tanto a estratégia como o estilo de luta.',
+      price: 'R$299.99',
+      imageUrl: jogoUmMobile,
+    },
+    {
+      name: 'Red dead redemption 2',
+      description: 'Red Dead Redemption 2 é um jogo eletrônico de ação-aventura desenvolvido e publicado pela Rockstar Games. É o terceiro título da série Red Dead e uma prequela de Red Dead Redemption, tendo sido lançado em outubro de 2018.',
+      price: 'R$399.99',
+      imageUrl: jogoDoisMobile,
+    },
+  ];
+
+  if (isMobile){
+    return (
+      <div className="banner-slider">
+  
+        <Slider ref={sliderRef} {...settings}>
+          {gamesMobile.map((game, index) => (
+            <div key={index} className="slide">
+              <div className="sub-banner">
+                <img className="img-banner" src={game.imageUrl} alt={`Slide ${index + 1}`} />
+                <div className="game-details">
+                  <span className="name">{game.name}</span>
+                  <p className="price">{game.price}</p>
+                  <p className="description">{game.description}</p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </Slider>
+        <div className="game-info">
+  
+          <span className="game-name">{games[currentSlide].name}<span></span></span>
+  
+          <div className="arrow-container">
+            <p>{currentSlide + 1}/{games.length}</p>
+            <button className="arrow-button" onClick={handlePrevSlide}>
+              <FaChevronLeft />
+            </button>
+            <button className="arrow-button" onClick={handleNextSlide}>
+              <FaChevronRight />
+            </button>
+          </div>
+        </div>
+      </div >
+    );
+  };
   return (
     <div className="banner-slider">
 
@@ -71,20 +122,20 @@ const BannerSlider = () => {
           </div>
         ))}
       </Slider>
-<div className="game-info">
+      <div className="game-info">
 
-  <span className="game-name">{games[currentSlide].name}<span></span></span>
+        <span className="game-name">{games[currentSlide].name}<span></span></span>
 
-  <div className="arrow-container">
-    <p>{currentSlide + 1}/{games.length}</p>
-    <button className="arrow-button" onClick={handlePrevSlide}>
-      <FaChevronLeft />
-    </button>
-    <button className="arrow-button" onClick={handleNextSlide}>
-      <FaChevronRight />
-    </button>
-  </div>
-</div>
+        <div className="arrow-container">
+          <p>{currentSlide + 1}/{games.length}</p>
+          <button className="arrow-button" onClick={handlePrevSlide}>
+            <FaChevronLeft />
+          </button>
+          <button className="arrow-button" onClick={handleNextSlide}>
+            <FaChevronRight />
+          </button>
+        </div>
+      </div>
     </div >
   );
 };

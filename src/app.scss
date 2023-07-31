@@ -35,6 +35,11 @@ body{
     flex-direction: row;
     margin-bottom: 60px;
     height: 300px;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+
   }
 
   .destaques-container {
@@ -42,6 +47,11 @@ body{
     display: flex;
     gap: 50px;
     justify-content: center;
+
+    @media (max-width: 768px){
+      width: 236.5015869140625px;
+      height: 423px;
+    }
   }
 
   .middle-container, .bottom-container{
@@ -64,6 +74,11 @@ body{
   .recomendation-head {
     display: flex;
     flex-direction: row;
+
+    @media (max-width: 768px) {
+      align-items: center;
+      flex-direction: column;
+    }
   }
 
   .select-recomendation{
@@ -80,6 +95,14 @@ body{
     gap: 20px;
     bottom: 10px;
     z-index: 80;
+
+    @media (max-width: 768px) {
+      align-items: center;
+      width: 334px;
+      height: 218px;
+      border: 1px;
+      flex-direction: column;
+    }
   }
 
   .container-title-shelf {
